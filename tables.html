@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        th,td,table{
+            border: 2px solid black;
+            border-collapse:collapse
+           /*border-radius: 10px;*/
+            
+        }
+        table{
+            margin:0px;
+        }
+        tr:nth-child(even){
+            background-color: aqua;
+        }
+        tr:nth-child(odd){
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <table style="width: 70%;">
+       <!--<colgroup>
+            <col span="3" style="background-color: greenyellow;">
+        </colgroup>-->
+        <caption>Student Details</caption>
+
+
+        <thead>
+        <tr style="height: 100px;">
+            <th>s.no</th>
+            <th style="width: 100%;">name</th>
+            <th>course</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td colspan="2">1</td>
+            <td>full stack wed developer</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>naresh</td>
+            <td rowspan="2">front end</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>raj</td>
+        </tr>
+    </tbody>
+
+    </table>
+    </center>
+    
+</body>
+</html>
